@@ -4,7 +4,6 @@ int main(){
     
     
   // Variáveis primeira carta
-
   char Estado1;
   char Codigo_da_carta1[4];
   char Nome_da_cidade1[50];
@@ -12,7 +11,6 @@ int main(){
   float Area1, PIB1;
 
   // Variáveis segunda carta
-
   char Estado2;
   char Codigo_da_carta2[4];
   char Nome_da_cidade2[50];
