@@ -9,7 +9,7 @@ int main(){
   char Nome_da_cidade1[50];
   int Populacao1, Pontos_Turisticos1;
   float Area1, PIB1;
-  float PIB_Per_Capita2 = (float) PIB2 / Populacao2, Densidade_Populacional2 = (float) Populacao2 / Area2;
+  float PIB_Per_Capita1, Densidade_Populacional1;
 
   // Variáveis segunda carta
   char Estado2;
@@ -17,7 +17,7 @@ int main(){
   char Nome_da_cidade2[50];
   int Populacao2, Pontos_Turisticos2;
   float Area2, PIB2;
-  float PIB_Per_Capita2 = (float) PIB2 / Populacao2, Densidade_Populacional2 = (float) Populacao2 / Area2;
+  float PIB_Per_Capita2, Densidade_Populacional2;
     
     
   // Cabeçalho do jogo
@@ -30,7 +30,7 @@ int main(){
   scanf("%c", &Estado1);
 
   printf("Digite o Código da Carta(ex: A01): ");
-  scanf("%s", Codigo_da_carta1);
+  scanf("%3s", Codigo_da_carta1);
 
   printf("Digite o Nome da Cidade: ");
   scanf("%s", Nome_da_cidade1);
@@ -47,6 +47,10 @@ int main(){
   printf("Digite o número de Pontos Turísticos: ");
   scanf("%d", &Pontos_Turisticos1);
 
+  // Cálculos após a leitura dos dados
+  PIB_Per_Capita1 = (float) PIB1 / Populacao1;
+  Densidade_Populacional1 = (float) Populacao1 / Area1;
+
   printf("\n\n");
 
   // Leitura de dados da segunda carta
@@ -57,7 +61,7 @@ int main(){
   scanf(" %c", &Estado2);
 
   printf("Digite o Código da Carta (ex: A01): ");
-  scanf("%s", Codigo_da_carta2);
+  scanf("%3s", Codigo_da_carta2);
 
   printf("Digite o Nome da Cidade: ");
   scanf("%s", Nome_da_cidade2);
@@ -76,6 +80,9 @@ int main(){
 
   printf("\n\n");
 
+  // Cálculos após a leitura dos dados
+  PIB_Per_Capita2 = (float) PIB2 / Populacao2;
+  Densidade_Populacional2 = (float) Populacao2 / Area2;
 
   // Exibição das cartas cadastradas
     
