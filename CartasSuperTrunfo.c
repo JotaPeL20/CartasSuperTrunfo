@@ -27,29 +27,29 @@ int main(){
   // Leitura de dados da primeira carta
   printf("Registre a sua carta 1\n\n");
 
-  printf("Digite o Estado (A-H): ");//O jogador irá digitar a letra correspondente ao Estado
+  printf("Digite o Estado (A-H): "); //O jogador irá digitar a letra correspondente ao Estado
   scanf("%c", &Estado1);
 
-  printf("Digite o Código da Carta(ex: A01): ");//O jogador ira digitar o código da carta
+  printf("Digite o Código da Carta(ex: A01): "); //O jogador irá digitar o código da carta
   scanf("%3s", Codigo_da_carta1);
 
-  printf("Digite o Nome da Cidade: ");//O jogador ira digitar o nome da cidade presente na carta
+  printf("Digite o Nome da Cidade: "); //O jogador irá digitar o nome da cidade presente na carta
   scanf("%s", Nome_da_cidade1);
 
-  printf("Digite a População: ");//O jogador ira digitar a populaçao da cidade
+  printf("Digite a População: "); //O jogador irá digitar a populaçao da cidade
   scanf("%d", &Populacao1);
 
-  printf("Digite a Área da Cidade (km²): ");//O jogador ira digitar a área da cidade 
+  printf("Digite a Área da Cidade (km²): "); //O jogador irá digitar a área da cidade 
   scanf("%f", &Area1);
 
-  printf("Digite o PIB (bilhões de reais): ");//O jogador ira digitar o PIB da cidade
+  printf("Digite o PIB (bilhões de reais): "); //O jogador irá digitar o PIB da cidade
   scanf("%f", &PIB1);
 
-  printf("Digite o número de Pontos Turísticos: ");//O jogador ira digitar o numero de pontos turísticos da cidade
+  printf("Digite o número de Pontos Turísticos: "); //O jogador irá digitar o numero de pontos turísticos da cidade
   scanf("%d", &Pontos_Turisticos1);
 
   // Cálculos após a leitura dos dados
-  PIB_Per_Capita1 = (float) (PIB1 * 1000000000) / Populacao1;//Será convertido bilhões para unidades
+  PIB_Per_Capita1 = (float) (PIB1 * 1000000000) / Populacao1; //Usando a conversão explícita para float e convertendo bilhões em unidades
   Densidade_Populacional1 = (float) Populacao1 / Area1;
 
   printf("\n\n");
@@ -58,31 +58,31 @@ int main(){
 
   printf("Registre a sua carta 2\n\n");
 
-  printf("Digite o estado (A-H): ");//O jogador irá digitar a letra correspondente ao Estado
+  printf("Digite o estado (A-H): "); //O jogador irá digitar a letra correspondente ao Estado
   scanf(" %c", &Estado2);
 
-  printf("Digite o Código da Carta (ex: A01): ");//O jogador ira digitar o código da carta
+  printf("Digite o Código da Carta (ex: A01): "); //O jogador irá digitar o código da carta
   scanf("%3s", Codigo_da_carta2);
 
-  printf("Digite o Nome da Cidade: ");//O jogador ira digitar o nome da cidade presente na carta
+  printf("Digite o Nome da Cidade: "); //O jogador irá digitar o nome da cidade presente na carta
   scanf("%s", Nome_da_cidade2);
 
-  printf("Digite a População: ");//O jogador ira digitar a populaçao da cidade
+  printf("Digite a População: "); //O jogador irá digitar a populaçao da cidade
   scanf("%d", &Populacao2);
 
-  printf("Digite a Área da Cidade (km²): ");//O jogador ira digitar a área da cidade
+  printf("Digite a Área da Cidade (km²): "); //O jogador irá digitar a área da cidade
   scanf("%f", &Area2);
 
-  printf("Digite o PIB (bilhões de reais): ");//O jogador ira digitar o PIB da cidade
+  printf("Digite o PIB (bilhões de reais): "); //O jogador irá digitar o PIB da cidade
   scanf("%f", &PIB2);
 
-  printf("Digite o N° de Pontos Turísticos: ");//O jogador ira digitar o numero de pontos turísticos da cidade
+  printf("Digite o N° de Pontos Turísticos: "); //O jogador irá digitar o numero de pontos turísticos da cidade
   scanf("%d", &Pontos_Turisticos2);
 
   printf("\n\n");
 
   // Cálculos após a leitura dos dados
-  PIB_Per_Capita2 = (float) (PIB2 * 1000000000) / Populacao2;//Será convertido bilhões para unidades
+  PIB_Per_Capita2 = (float) (PIB2 * 1000000000) / Populacao2; //Usando a conversão explícita para float e convertendo bilhões em unidades
   Densidade_Populacional2 = (float) Populacao2 / Area2;
 
   // Exibição das cartas cadastradas
@@ -91,7 +91,7 @@ int main(){
 
   // Carta 1 
 
-  printf("Carta 1\n\n");
+  printf("Carta 1\n"); 
   printf("Estado: %c\n", Estado1);
   printf("Código: %s\n", Codigo_da_carta1);
   printf("Nome da Cidade: %s\n", Nome_da_cidade1);
@@ -106,7 +106,7 @@ int main(){
     
   // Carta 2
 
-  printf("Carta 2\n\n");
+  printf("Carta 2\n");  
   printf("Estado: %c\n", Estado2);
   printf("Código: %s\n", Codigo_da_carta2);
   printf("Nome da Cidade: %s\n", Nome_da_cidade2);
