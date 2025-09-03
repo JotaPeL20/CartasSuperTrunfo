@@ -31,7 +31,7 @@ int main(){
   scanf("%c", &Estado1);
 
   printf("Digite o Código da Carta(ex: A01): "); //O jogador irá digitar o código da carta
-  scanf("%3s", Codigo_da_carta1);
+  scanf("%s", Codigo_da_carta1);
 
   printf("Digite o Nome da Cidade: "); //O jogador irá digitar o nome da cidade presente na carta
   scanf("%s", Nome_da_cidade1);
@@ -58,11 +58,11 @@ int main(){
 
   printf("Registre a sua carta 2\n\n");
 
-  printf("Digite o estado (A-H): "); //O jogador irá digitar a letra correspondente ao Estado
+  printf("Digite o Estado (A-H): "); //O jogador irá digitar a letra correspondente ao Estado
   scanf(" %c", &Estado2);
 
   printf("Digite o Código da Carta (ex: A01): "); //O jogador irá digitar o código da carta
-  scanf("%3s", Codigo_da_carta2);
+  scanf("%s", Codigo_da_carta2);
 
   printf("Digite o Nome da Cidade: "); //O jogador irá digitar o nome da cidade presente na carta
   scanf("%s", Nome_da_cidade2);
@@ -118,6 +118,5 @@ int main(){
   printf("PIB per Capita: %.2f reais\n", PIB_Per_Capita2);
   
   return 0;
-
 
 }
