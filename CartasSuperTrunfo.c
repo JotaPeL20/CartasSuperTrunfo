@@ -21,6 +21,10 @@ int main(){
   float PIB_Per_Capita2, Densidade_Populacional2;
   float SuperPoder2;
 
+  // Variável do resultado
+
+  int Resultado
+
     
   // Cabeçalho do jogo
 
@@ -87,7 +91,7 @@ int main(){
   // Cálculos após a leitura dos dados
   PIB_Per_Capita2 = (float) (PIB2 * 1000000000) / Populacao2; //Usando a conversão explícita para float e convertendo bilhões em unidades
   Densidade_Populacional2 = (float) Populacao2 / Area2;
-  SuperPoder1 = (float) Populacao2 + Area2 + (PIB2 * 1000000000) + Pontos_Turisticos2 + PIB_Per_Capita2 + (Densidade_Populacional2 / Populacao2);
+  SuperPoder2 = (float) Populacao2 + Area2 + (PIB2 * 1000000000) + Pontos_Turisticos2 + PIB_Per_Capita2 + (Densidade_Populacional2 / Populacao2);
   
   // Exibição das cartas cadastradas
     
@@ -125,9 +129,10 @@ int main(){
 
   // Comparação das cartas cadastradas e resultado
 
+  Resultado = 
   printf("COMPARAÇÃO DAS CARTAS E RESULTADO\n\n");
 
-  printf("População: ")
+  printf("População: ");
 
   
 
