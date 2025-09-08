@@ -10,6 +10,7 @@ int main(){
   int  Populacao1, Pontos_Turisticos1;
   float Area1, PIB1;
   float PIB_Per_Capita1, Densidade_Populacional1;
+  float SuperPoder1;
 
   // Variáveis segunda carta
   char Estado2;
@@ -18,7 +19,8 @@ int main(){
   int Pontos_Turisticos2, Populacao2;
   float Area2, PIB2;
   float PIB_Per_Capita2, Densidade_Populacional2;
-    
+  float SuperPoder2;
+
     
   // Cabeçalho do jogo
 
@@ -51,7 +53,8 @@ int main(){
   // Cálculos após a leitura dos dados
   PIB_Per_Capita1 = (float) (PIB1 * 1000000000) / Populacao1; //Usando a conversão explícita para float e convertendo bilhões em unidades
   Densidade_Populacional1 = (float) Populacao1 / Area1;
-
+  SuperPoder1 = (float) Populacao1 + Area1 + (PIB1 * 1000000000) + Pontos_Turisticos1 + PIB_Per_Capita1 + (Densidade_Populacional1 / 1);
+  
   printf("\n\n");
 
   // Leitura de dados da segunda carta
@@ -84,7 +87,8 @@ int main(){
   // Cálculos após a leitura dos dados
   PIB_Per_Capita2 = (float) (PIB2 * 1000000000) / Populacao2; //Usando a conversão explícita para float e convertendo bilhões em unidades
   Densidade_Populacional2 = (float) Populacao2 / Area2;
-
+  SuperPoder1 = (float) Populacao2 + Area2 + (PIB2 * 1000000000) + Pontos_Turisticos2 + PIB_Per_Capita2 + (Densidade_Populacional2 / Populacao2);
+  
   // Exibição das cartas cadastradas
     
   printf("CARTAS CADASTRADAS\n\n");
@@ -101,7 +105,7 @@ int main(){
   printf("Número de Pontos Turísticos: %d\n", Pontos_Turisticos1);
   printf("Densidade Populacional: %.2f hab/km²\n", Densidade_Populacional1);
   printf("PIB per Capita: %.2f reais\n", PIB_Per_Capita1);
-
+  printf("Super Poder: %.2f\n", SuperPoder1);
   printf("\n");
     
   // Carta 2
@@ -116,7 +120,25 @@ int main(){
   printf("Número de Pontos Turísticos: %d\n", Pontos_Turisticos2);
   printf("Densidade Populacional: %.2f hab/km²\n", Densidade_Populacional2);
   printf("PIB per Capita: %.2f reais\n", PIB_Per_Capita2);
+  printf("Super Poder: %.2f\n", SuperPoder2);
+  printf("\n");
+
+  // Comparação das cartas cadastradas e resultado
+
+  printf("COMPARAÇÃO DAS CARTAS E RESULTADO\n\n");
+
+  printf("População: ")
+
   
+
+
+
+
+
+
+
+
+
   return 0;
 
 }
