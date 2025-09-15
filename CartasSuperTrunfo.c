@@ -127,21 +127,6 @@ int main(){
   printf("Super Poder: %.2f\n", SuperPoder2);
   printf("\n");
 
-  // Comparação das cartas cadastradas e resultado
-
-  Resultado = 
-  printf("COMPARAÇÃO DAS CARTAS E RESULTADO\n\n");
-
-  printf("População: ");
-
-  
-
-
-
-
-
-
-
 
 
   return 0;
