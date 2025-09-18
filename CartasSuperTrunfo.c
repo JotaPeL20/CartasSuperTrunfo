@@ -23,9 +23,6 @@ int main(){
   float PIB_Per_Capita2, Densidade_Populacional2;
   float SuperPoder2;
 
-  // Variável do resultado
-
-  int Resultado
 
     
   // Cabeçalho do jogo
