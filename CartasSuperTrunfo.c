@@ -54,11 +54,12 @@ int main(){
   scanf("%u", &Pontos_Turisticos1);
 
   // Cálculos após a leitura dos dados
+
   PIB_Per_Capita1 = (float) (PIB1 * 1000000000) / Populacao1; //Usando a conversão explícita para float e convertendo bilhões em unidades
   Densidade_Populacional1 = (float) Populacao1 / Area1;
   
-  
   //Cálculo do SuperPoder1 com o inverso da densidade
+
   float Inverso_Densidade_Populacional1 = Area1 / Populacao1;
   SuperPoder1 = (float) Populacao1 + Area1 + (PIB1 * 1000000000) + Pontos_Turisticos1 + PIB_Per_Capita1 + Inverso_Densidade_Populacional1;
   
@@ -134,10 +135,42 @@ int main(){
   printf("\n");
 
 
-  //Comparação das cartas e vencedor Final
-
+  //Comparação das cartas e vencedor Final 
   
+  printf("COMPARAÇÃO DAS CARTAS\n\n");
 
+  // População (maior vence)
+  int Resultado_Populacao = (Populacao1 > Populacao2)? 1 : 0;
+  printf("População: Carta %d venceu (%d)\n", Resultado_Populacao ? 1 : 2, Resultado_Populacao);
+
+  // Área (maior vence)
+  int Resultado_Area = (Area1 > Area2)? 1 : 0;
+  printf("Área: Carta %d venceu (%d)\n", Resultado_Area ? 1 : 2, Resultado_Area);
+
+  //PIB (maior vence)
+  int Resultado_PIB = (PIB1 > PIB2)? 1 : 0;
+  printf("PIB: Carta %d venceu (%d)\n", Resultado_PIB ? 1 : 2, Resultado_PIB);
+
+  //Pontos Turísticos (maior vence)
+  int Resultado_Pontos_Turisticos = (Pontos_Turisticos1 > Pontos_Turisticos2)? 1 : 0;
+  printf("Pontos Turísticos: Carta %d venceu (%d)\n", Resultado_Pontos_Turisticos ? 1 : 2, Resultado_Pontos_Turisticos);
+
+  //Densidade Populacional (menor vence)
+  int Resultado_Densidade_Populacional = (Inverso_Densidade_Populacional1 < Inverso_Densidade_Populacional2)? 1 : 0;
+  printf("Densidade Populacional: Carta %d venceu (%d)\n", Resultado_Densidade_Populacional ? 1 : 2, Resultado_Densidade_Populacional);
+
+  //PIB per Capita (maior vence)
+  int Resultado_PIB_Per_Capita = (PIB_Per_Capita1 > PIB_Per_Capita2)? 1 : 0;
+  printf("PIB per Capita: Carta %d venceu (%d)\n", Resultado_PIB_Per_Capita ? 1 : 2, Resultado_PIB_Per_Capita);
+
+  //Super Poder (maior vence)
+  int Resultado_Super_Poder = (SuperPoder1 > SuperPoder2)? 1 : 0;
+  printf("População: Carta %d venceu (%d)\n", Resultado_Super_Poder ? 1 : 2, Resultado_Super_Poder);
+
+  //Resultado Final ( maior vence)
+  printf("RESULTADO FINAL\n\n")
+  int Resultado_Final = (SuperPoder1 > SuperPoder2)? 1 : 0;
+  printf("Resultado Final: Carta %d venceu (%d)\n", Resultado_Final ? 1 : 2, Resultado_Final);
 
 
   return 0;
