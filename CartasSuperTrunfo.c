@@ -165,7 +165,7 @@ int main(){
 
   //Super Poder (maior vence)
   int Resultado_Super_Poder = (SuperPoder1 > SuperPoder2)? 1 : 0;
-  printf("População: Carta %d venceu (%d)\n", Resultado_Super_Poder ? 1 : 2, Resultado_Super_Poder);
+  printf("Super Poder: Carta %d venceu (%d)\n", Resultado_Super_Poder ? 1 : 2, Resultado_Super_Poder);
 
 
 
