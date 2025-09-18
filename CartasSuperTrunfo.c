@@ -23,8 +23,6 @@ int main(){
   float PIB_Per_Capita2, Densidade_Populacional2;
   float SuperPoder2;
 
-
-    
   // Cabeçalho do jogo
 
   printf("SUPER TRUNFO DE PAÍSES - CADASTRO DE CARTAS\n\n");
@@ -170,5 +168,6 @@ int main(){
 
 
   return 0;
+
 
 }
