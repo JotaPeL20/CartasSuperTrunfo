@@ -133,7 +133,7 @@ int main(){
   printf("\n");
 
 
-  //Comparação das cartas e vencedor Final 
+  //Comparação das cartas 
   
   printf("COMPARAÇÃO DAS CARTAS\n\n");
 
