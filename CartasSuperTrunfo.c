@@ -56,7 +56,11 @@ int main(){
   // Cálculos após a leitura dos dados
   PIB_Per_Capita1 = (float) (PIB1 * 1000000000) / Populacao1; //Usando a conversão explícita para float e convertendo bilhões em unidades
   Densidade_Populacional1 = (float) Populacao1 / Area1;
-  SuperPoder1 = (float) Populacao1 + Area1 + (PIB1 * 1000000000) + Pontos_Turisticos1 + PIB_Per_Capita1 + (Densidade_Populacional1 / 1);
+  
+  
+  //Cálculo do SuperPoder1 com o inverso da densidade
+  float Inverso_Densidade_Populacional1 = Area1 / Populacao1;
+  SuperPoder1 = (float) Populacao1 + Area1 + (PIB1 * 1000000000) + Pontos_Turisticos1 + PIB_Per_Capita1 + Inverso_Densidade_Populacional1;
   
   printf("\n\n");
 
@@ -90,7 +94,10 @@ int main(){
   // Cálculos após a leitura dos dados
   PIB_Per_Capita2 = (float) (PIB2 * 1000000000) / Populacao2; //Usando a conversão explícita para float e convertendo bilhões em unidades
   Densidade_Populacional2 = (float) Populacao2 / Area2;
-  SuperPoder2 = (float) Populacao2 + Area2 + (PIB2 * 1000000000) + Pontos_Turisticos2 + PIB_Per_Capita2 + (Densidade_Populacional2 / Populacao2);
+  
+  //Cálculo do SuperPoder2 com o inverso da densidade
+  float Inverso_Densidade_Populacional2 = Area2 / Populacao2;
+  SuperPoder2 = (float) Populacao2 + Area2 + (PIB2 * 1000000000) + Pontos_Turisticos2 + PIB_Per_Capita2 + Inverso_Densidade_Populacional2;
   
   // Exibição das cartas cadastradas
     
@@ -125,6 +132,11 @@ int main(){
   printf("PIB per Capita: %.2f reais\n", PIB_Per_Capita2);
   printf("Super Poder: %.2f\n", SuperPoder2);
   printf("\n");
+
+
+  //Comparação das cartas e vencedor Final
+
+  
 
 
 
