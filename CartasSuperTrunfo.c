@@ -167,10 +167,6 @@ int main(){
   int Resultado_Super_Poder = (SuperPoder1 > SuperPoder2)? 1 : 0;
   printf("População: Carta %d venceu (%d)\n", Resultado_Super_Poder ? 1 : 2, Resultado_Super_Poder);
 
-  //Resultado Final ( maior vence)
-  printf("RESULTADO FINAL\n\n")
-  int Resultado_Final = (SuperPoder1 > SuperPoder2)? 1 : 0;
-  printf("Resultado Final: Carta %d venceu (%d)\n", Resultado_Final ? 1 : 2, Resultado_Final);
 
 
   return 0;
