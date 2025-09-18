@@ -5,7 +5,7 @@ int main(){
     
   // Variáveis primeira carta
   char Estado1;
-  unsigned int Codigo_da_carta1[4];
+  char Codigo_da_carta1[4];
   char Nome_da_cidade1[50];
   unsigned long int Populacao1;
   unsigned int Pontos_Turisticos1;
@@ -15,7 +15,7 @@ int main(){
 
   // Variáveis segunda carta
   char Estado2;
-  unsigned int Codigo_da_carta2[4];
+  char Codigo_da_carta2[4];
   char Nome_da_cidade2[50];
   unsigned long int Populacao2;
   unsigned int Pontos_Turisticos2;
@@ -36,7 +36,7 @@ int main(){
   scanf("%c", &Estado1);
 
   printf("Digite o Código da Carta(ex: A01): "); //O jogador irá digitar o código da carta
-  scanf("%u", Codigo_da_carta1);
+  scanf("%s", Codigo_da_carta1);
 
   printf("Digite o Nome da Cidade: "); //O jogador irá digitar o nome da cidade presente na carta
   scanf("%s", Nome_da_cidade1);
@@ -73,7 +73,7 @@ int main(){
   scanf(" %c", &Estado2);
 
   printf("Digite o Código da Carta (ex: A01): "); //O jogador irá digitar o código da carta
-  scanf("%u", Codigo_da_carta2);
+  scanf("%s", Codigo_da_carta2);
 
   printf("Digite o Nome da Cidade: "); //O jogador irá digitar o nome da cidade presente na carta
   scanf("%s", Nome_da_cidade2);
@@ -108,7 +108,7 @@ int main(){
 
   printf("Carta 1\n"); 
   printf("Estado: %c\n", Estado1);
-  printf("Código: %u\n", Codigo_da_carta1);
+  printf("Código: %s\n", Codigo_da_carta1);
   printf("Nome da Cidade: %s\n", Nome_da_cidade1);
   printf("População: %lu habitantes\n", Populacao1);
   printf("Área: %.2f Km²\n", Area1);
@@ -123,7 +123,7 @@ int main(){
 
   printf("Carta 2\n");  
   printf("Estado: %c\n", Estado2);
-  printf("Código: %u\n", Codigo_da_carta2);
+  printf("Código: %s\n", Codigo_da_carta2);
   printf("Nome da Cidade: %s\n", Nome_da_cidade2);
   printf("População: %lu habitantes\n", Populacao2);
   printf("Área: %.2f Km²\n", Area2);
@@ -156,7 +156,7 @@ int main(){
   printf("Pontos Turísticos: Carta %d venceu (%d)\n", Resultado_Pontos_Turisticos ? 1 : 2, Resultado_Pontos_Turisticos);
 
   //Densidade Populacional (menor vence)
-  int Resultado_Densidade_Populacional = (Inverso_Densidade_Populacional1 < Inverso_Densidade_Populacional2)? 1 : 0;
+  int Resultado_Densidade_Populacional = (Densidade_Populacional1 < Densidade_Populacional2)? 1 : 0;
   printf("Densidade Populacional: Carta %d venceu (%d)\n", Resultado_Densidade_Populacional ? 1 : 2, Resultado_Densidade_Populacional);
 
   //PIB per Capita (maior vence)
