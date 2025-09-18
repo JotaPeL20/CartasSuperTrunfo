@@ -30,26 +30,26 @@ int main(){
   // Leitura de dados da primeira carta
   printf("Registre a sua carta 1\n\n");
 
-  printf("Digite o Estado (A-H): "); //O jogador irá digitar a letra correspondente ao Estado
-  scanf("%c", &Estado1);
+  printf("Digite o Estado (A-H): "); 
+  scanf("%c", &Estado1); //O jogador irá digitar a letra correspondente ao Estado
 
-  printf("Digite o Código da Carta(ex: A01): "); //O jogador irá digitar o código da carta
-  scanf("%s", Codigo_da_carta1);
+  printf("Digite o Código da Carta(ex: A01): "); 
+  scanf("%s", Codigo_da_carta1); //O jogador irá digitar o código da carta
 
-  printf("Digite o Nome da Cidade: "); //O jogador irá digitar o nome da cidade presente na carta
-  scanf("%s", Nome_da_cidade1);
+  printf("Digite o Nome da Cidade: "); 
+  scanf("%s", Nome_da_cidade1); //O jogador irá digitar o nome da cidade presente na carta
 
-  printf("Digite a População: "); //O jogador irá digitar a populaçao da cidade
-  scanf("%lu", &Populacao1);
+  printf("Digite a População: "); 
+  scanf("%lu", &Populacao1); //O jogador irá digitar a populaçao da cidade
 
-  printf("Digite a Área da Cidade (km²): "); //O jogador irá digitar a área da cidade 
-  scanf("%f", &Area1);
+  printf("Digite a Área da Cidade (km²): ");  
+  scanf("%f", &Area1); //O jogador irá digitar a área da cidade
 
-  printf("Digite o PIB (bilhões de reais): "); //O jogador irá digitar o PIB da cidade
-  scanf("%f", &PIB1);
+  printf("Digite o PIB (bilhões de reais): "); 
+  scanf("%f", &PIB1); //O jogador irá digitar o PIB da cidade
 
-  printf("Digite o número de Pontos Turísticos: "); //O jogador irá digitar o numero de pontos turísticos da cidade
-  scanf("%u", &Pontos_Turisticos1);
+  printf("Digite o número de Pontos Turísticos: "); 
+  scanf("%u", &Pontos_Turisticos1); //O jogador irá digitar o numero de pontos turísticos da cidade
 
   // Cálculos após a leitura dos dados
 
@@ -67,26 +67,26 @@ int main(){
 
   printf("Registre a sua carta 2\n\n");
 
-  printf("Digite o Estado (A-H): "); //O jogador irá digitar a letra correspondente ao Estado
-  scanf(" %c", &Estado2);
+  printf("Digite o Estado (A-H): "); 
+  scanf(" %c", &Estado2); //O jogador irá digitar a letra correspondente ao Estado
 
-  printf("Digite o Código da Carta (ex: A01): "); //O jogador irá digitar o código da carta
-  scanf("%s", Codigo_da_carta2);
+  printf("Digite o Código da Carta (ex: A01): "); 
+  scanf("%s", Codigo_da_carta2); //O jogador irá digitar o código da carta
 
-  printf("Digite o Nome da Cidade: "); //O jogador irá digitar o nome da cidade presente na carta
-  scanf("%s", Nome_da_cidade2);
+  printf("Digite o Nome da Cidade: "); 
+  scanf("%s", Nome_da_cidade2); //O jogador irá digitar o nome da cidade presente na carta
 
-  printf("Digite a População: "); //O jogador irá digitar a populaçao da cidade
-  scanf("%lu", &Populacao2);
+  printf("Digite a População: "); 
+  scanf("%lu", &Populacao2); //O jogador irá digitar a populaçao da cidade
 
-  printf("Digite a Área da Cidade (km²): "); //O jogador irá digitar a área da cidade
-  scanf("%f", &Area2);
+  printf("Digite a Área da Cidade (km²): "); 
+  scanf("%f", &Area2); //O jogador irá digitar a área da cidade
 
-  printf("Digite o PIB (bilhões de reais): "); //O jogador irá digitar o PIB da cidade
-  scanf("%f", &PIB2);
+  printf("Digite o PIB (bilhões de reais): "); 
+  scanf("%f", &PIB2); //O jogador irá digitar o PIB da cidade
 
-  printf("Digite o N° de Pontos Turísticos: "); //O jogador irá digitar o numero de pontos turísticos da cidade
-  scanf("%u", &Pontos_Turisticos2);
+  printf("Digite o N° de Pontos Turísticos: "); 
+  scanf("%u", &Pontos_Turisticos2); //O jogador irá digitar o numero de pontos turísticos da cidade
 
   printf("\n\n");
 
